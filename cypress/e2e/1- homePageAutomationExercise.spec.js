@@ -1,6 +1,6 @@
 /// <reference types ="Cypress" />
 
-import { featureItems } from "../support/1- homePageSupport";
+import { featureItems } from "../support/Extra/1- homePageSupport";
 let FeatureItems = new featureItems();
 beforeEach(() => {
   cy.visit("/");

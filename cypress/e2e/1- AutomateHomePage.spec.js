@@ -35,10 +35,8 @@ describe("HomePage Verification", () => {
 
   it.only("Verify New Account Creation", () => {
     // homePage.loginLink.click();
-    homePage.getSignUpPage.newUserSignUp(
-      testData.userName,
-      testData.signUpEmail
-    );
+    let SignUpPage = homePage.getSignUpPage;
+    SignUpPage.newUserSignUp(testData.userName, testData.signUpEmail);
     // homePage.newUserSignUp(testData.userName, testData.signUpEmail);
     // homePage.verifyAccountExistsforCreatedUser(
     //   testData.userName,
